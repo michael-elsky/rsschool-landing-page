@@ -1,0 +1,54 @@
+:root {
+  --text-primary: #403f3d;
+  --text-inverse: #e0d4ca;
+  --text-accent: #ad917c;
+
+  --bg-page: #e0d4ca;
+  --bg-container: #655f56;
+  --bg-overlay: #666564;
+
+  --border-primary: #c0b6ae;
+  --border-inverse: #655f56;
+
+  --theme-btn-sun-bg: #ad917c;
+  --theme-btn-sun-icon: #e0d4ca;
+  --theme-btn-moon-bg: transparent;
+  --theme-btn-moon-icon: #403f3d;
+  --theme-btn-moon-bg-hover: #655f56;
+  --theme-btn-moon-icon-hover: #e0d4ca;
+
+  --tab-active: #655f56;
+  --tab-inactive: transparent;
+  --tab-hover: #655f56;
+
+  --button-primary: #e0d4ca;
+  --button-secondary: #655f56;
+  --button-transparent: transparent;
+}
+
+html.dark {
+  --text-primary: #e0d4ca;
+  --text-accent: #ad917c;
+
+  --bg-page: #292826;
+  --bg-container: #403f3d;
+  --bg-overlay: #545351;
+
+  --border-primary: #665f55;
+  --border-inverse: #c1b6ad;
+
+  --theme-btn-sun-bg: transparent;
+  --theme-btn-sun-icon: #e0d4ca;
+  --theme-btn-sun-bg-hover: #403f3d;
+  --theme-btn-moon-bg: #ad917c;
+  --theme-btn-moon-icon: #e0d4ca;
+  --theme-btn-moon-bg-hover: #ad917c;
+  --theme-btn-moon-icon-hover: #e0d4ca;
+
+  --tab-active: #403f3d;
+  --tab-inactive: transparent;
+  --tab-hover: #655f56;
+
+  --button-primary: var(--button-transparent);
+  --button-secondary: #403f3d;
+}
