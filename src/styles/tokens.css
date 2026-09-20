@@ -1,14 +1,10 @@
 :root {
   --font-family: 'Inter', Arial, sans-serif;
+  --font-size-default: 16px;
 
   --viewport-desktop: 1440px;
   --viewport-tablet: 768px;
   --viewport-mobile: 380px;
-
-  --container-padding: 40px;
-  --container-width: calc(
-    var(--viewport-desktop) - var(--container-padding) * 2
-  );
 
   --radius-pill: 100px;
   --radius-block: 40px;

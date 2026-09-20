@@ -12,6 +12,9 @@
   <link rel="manifest" href="favicon/site.webmanifest" />
 
   <link rel="stylesheet" href="./src/styles/main.css">
+  <script>
+    document.documentElement.classList.toggle('dark', localStorage.getItem('theme') === 'dark')
+  </script>
   <title>Landing Page</title>
 </head>
 

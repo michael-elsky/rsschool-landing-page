@@ -12,13 +12,16 @@
   <link rel="manifest" href="favicon/site.webmanifest" />
 
   <link rel="stylesheet" href="./src/styles/main.css">
+  <script>
+    document.documentElement.classList.toggle('dark', localStorage.getItem('theme') === 'dark')
+  </script>
   <title>Catalog</title>
 </head>
 
 <body>
   <pug src="./src/pages/catalog.pug"></pug>
 
-  <script type="module" src="./src/js/catalog.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,6 @@ html {
 body {
   font-family: var(--font-family);
   color: var(--text-primary);
-  min-width: 380px;
   background-color: var(--bg-page);
   margin: 0;
 }
@@ -23,6 +22,8 @@ a {
 
 button {
   font: inherit;
+  background: transparent;
+  border: none;
 }
 
 img {
@@ -31,6 +32,18 @@ img {
 }
 
 .container {
+  --container-padding: 40px;
+  --container-width: calc(
+    var(--viewport-desktop) - var(--container-padding) * 2
+  );
+
+  @media (max-width: 576px) {
+    --container-padding: 16px;
+    --container-width: calc(
+      var(--viewport-mobile) - var(--container-padding) * 2
+    );
+  }
+
   width: min(var(--container-width), calc(100% - var(--container-padding) * 2));
 
   margin-inline: auto;
