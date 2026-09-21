@@ -24,6 +24,11 @@
   --button-primary: #e0d4ca;
   --button-secondary: #655f55;
   --button-transparent: transparent;
+
+  --footer-bg: #655f56;
+
+  --social-bg-hover: #e0d4ca;
+  --social-icon-hover: #403f3d;
 }
 
 html.dark {
@@ -47,4 +52,9 @@ html.dark {
 
   --button-primary: var(--button-transparent);
   --button-secondary: #403f3d;
+
+  --footer-bg: #403f3d;
+
+  --social-bg-hover: #292826;
+  --social-icon-hover: #e1d4c9; 
 }
