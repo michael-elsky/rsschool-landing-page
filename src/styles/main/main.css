@@ -1,5 +1,6 @@
 @import './hero.css';
 @import './favorite-coffee.css';
+@import './about.css';
 
 main {
   display: flex;
