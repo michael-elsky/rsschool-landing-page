@@ -1,0 +1,48 @@
+-
+  var slides = [
+    { imagePath: "slider/coffee-slider-1.png", alt: "S’mores Frappuccino", heading: "S’mores Frappuccino", text: "This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.", price: "$5.50" },
+    { imagePath: "slider/coffee-slider-2.png", alt: "Caramel Macchiato", heading: "Caramel Macchiato", text: "Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.", price: "$5.00" },
+    { imagePath: "slider/coffee-slider-3.png", alt: "Ice coffee", heading: "Ice coffee", text: "A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.", price: "$4.50" },
+  ]
+
+mixin arrowLeftIcon()
+  svg(width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+    path(d="M13 6.5H0.5M6.5 12.5L0.5 6.5L6.5 0.5" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round")
+
+mixin arrowRightIcon()
+  svg(width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+    path(d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round")
+
+
+section.favorite-coffee#favorite-coffee 
+  .container 
+    .favorite-coffee__wrapper
+      h2.favorite-coffee__heading Choose your 
+        span.favorite-coffee__heading-accent favorite 
+        | coffee
+      
+      .favorite-coffee__slider 
+        button.favorite-coffee__btn.favorite-coffee__btn-left(type="button", title="left slide")
+          +arrowLeftIcon()
+
+        .favorite-coffee__viewport
+          ul.favorite-coffee__slider-track
+            each slide in slides 
+              li.favorite-coffee__slider-item 
+                img(src=slide.imagePath, alt=slide.alt)
+                .favorite-coffee__slider-info
+                  h4.favorite-coffee__slider-info__heading=slide.heading
+                  p.favorite-coffee__slider-info__text=slide.text 
+                  p.favorite-coffee__slider-info__price=slide.price
+        
+        button.favorite-coffee__btn.favorite-coffee__btn-right(type="button", title="right slide")
+          +arrowRightIcon()
+      
+      ul.favorite-coffee__control-list
+        - for (var i = 0; i < 3; i++)
+          if i === 0
+            li.favorite-coffee__control-item.favorite-coffee__control-item--active
+          else 
+            li.favorite-coffee__control-item
+
+      
