@@ -58,6 +58,7 @@
   height: 60px;
   margin-inline: 3px;
   cursor: pointer;
+  transition: var(--transition);
 
   & svg path {
     stroke: var(--arrow-icon);

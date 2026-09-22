@@ -22,7 +22,7 @@ section.favorite-coffee#favorite-coffee
         | coffee
       
       .favorite-coffee__slider 
-        button.favorite-coffee__btn.favorite-coffee__btn-left(type="button", title="left slide")
+        button.favorite-coffee__btn.favorite-coffee__btn-left(type="button", aria-label="previous slide")
           +arrowLeftIcon()
 
         .favorite-coffee__viewport
@@ -31,11 +31,11 @@ section.favorite-coffee#favorite-coffee
               li.favorite-coffee__slider-item 
                 img(src=slide.imagePath, alt=slide.alt)
                 .favorite-coffee__slider-info
-                  h4.favorite-coffee__slider-info__heading=slide.heading
+                  h3.favorite-coffee__slider-info__heading=slide.heading
                   p.favorite-coffee__slider-info__text=slide.text 
                   p.favorite-coffee__slider-info__price=slide.price
         
-        button.favorite-coffee__btn.favorite-coffee__btn-right(type="button", title="right slide")
+        button.favorite-coffee__btn.favorite-coffee__btn-right(type="button", aria-label="next slide")
           +arrowRightIcon()
       
       ul.favorite-coffee__control-list
