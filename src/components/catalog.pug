@@ -1,0 +1,53 @@
+- 
+  var tabs = [
+    { type: "button", text: "Coffee", imagePath: "src/assets/images/icons/tabs/coffee.png" },
+    { type: "button", text: "Tea", imagePath: "src/assets/images/icons/tabs/tea.png" },
+    { type: "button", text: "Dessert", imagePath: "src/assets/images/icons/tabs/dessert.png" },
+  ]
+
+-
+  var cards = [
+    { imagePath: "src/assets/images/coffee/coffee-1.jpg", heading: "Irish coffee", text: "Fragrant black coffee with Jameson Irish whiskey and whipped milk", price: "$7.00" },
+    { imagePath: "src/assets/images/coffee/coffee-2.jpg", heading: "Kahlua coffee", text: "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk", price: "$7.00" },
+    { imagePath: "src/assets/images/coffee/coffee-3.jpg", heading: "Honey raf", text: "Espresso with frothed milk, cream and aromatic honey", price: "$5.50" },
+    { imagePath: "src/assets/images/coffee/coffee-4.jpg", heading: "Ice cappuccino", text: "Cappuccino with soft thick foam in summer version with ice", price: "$5.00" },
+    { imagePath: "src/assets/images/coffee/coffee-5.jpg", heading: "Espresso", text: "Classic black coffee", price: "$4.50" },
+    { imagePath: "src/assets/images/coffee/coffee-6.jpg", heading: "Latte", text: "Espresso coffee with the addition of steamed milk and dense milk foam", price: "$5.50" },
+    { imagePath: "src/assets/images/coffee/coffee-7.jpg", heading: "Latte macchiato", text: "Espresso with frothed milk and chocolate", price: "$5.50" },
+    { imagePath: "src/assets/images/coffee/coffee-8.jpg", heading: "Coffee with cognac", text: "Fragrant black coffee with cognac and whipped cream", price: "$6.50" },
+  ]
+
+main.catalog 
+  .container 
+    section.catalog__wrapper 
+      h2.catalog__heading Behind each of our cups hides an 
+        span amazing surprise
+      
+      ul.catalog__tabs-list
+        each tab, index in tabs 
+          if index === 0
+            li.catalog__tabs-item
+              button.catalog__tab.catalog__tab--active(type=tab.type)
+                div
+                  img(src=tab.imagePath, alt=tab.text)
+                = tab.text
+          else 
+            li.catalog__tabs-item
+              button.catalog__tab(type=tab.type)
+                div
+                  img(src=tab.imagePath, alt=tab.text)
+                = tab.text
+
+      
+      .catalog__products 
+        each card in cards 
+          article.catalog__product
+            .catalog__product-img 
+              img(src=card.imagePath, alt=card.heading)
+
+            .catalog__product-info
+              .catalog__product-heading=card.heading 
+              .catalog__product-text=card.text 
+              .catalog__product-price=card.price
+
+            
