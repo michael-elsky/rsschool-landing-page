@@ -1,0 +1,99 @@
+:root {
+  --text-primary: #403f3d;
+  --text-inverse: #e0d4ca;
+  --text-accent: #ad917c;
+
+  --hero-link-color: #403f3d;
+  --hero-link-bg: #e0d4ca;
+
+  --arrow-icon: #403f3d;
+  --arrow-icon-hover: #e1d4c9;
+  --arrow-bg-hover: #655f56;
+  --arrow-border: #403f3d;
+  --arrow-border-hover: transparent;
+
+  --tab-active-bg: #655f56;
+  --tab-active-img-bg: #e0d4ca;
+  --tab-active-color: #e1d4c9;
+  --tab-hover-bg: #655f56;
+  --tab-hover-img-bg: #e0d4ca6;
+  --tab-hover-color: #e1d4c9;
+  --tab-inactive-bg: #e0d4ca;
+  --tab-inactive-img-bg: #c0b6ae;
+  --tab-inactive-color: #403f3d;
+  --tab-inactive-border: #c1b6ad;
+
+  --bg-page: #e0d4ca;
+  --bg-container: #655f55;
+  --bg-overlay: #666564;
+
+  --border-primary: #c1b6ad;
+  --border-inverse: #655f55;
+
+  --theme-btn-inactive-bg: transparent;
+  --theme-btn-inactive-icon: #403f3d;
+  --theme-btn-active-bg: #ad917c;
+  --theme-btn-active-icon: #e0d4ca;
+  --theme-btn-hover-bg: #655f56;
+  --theme-btn-hover-icon: #e0d4ca;
+
+  --tab-active: #655f55;
+  --tab-inactive: transparent;
+  --tab-hover: #655f55;
+
+  --button-primary: #e0d4ca;
+  --button-secondary: #655f55;
+  --button-transparent: transparent;
+
+  --footer-bg: #655f56;
+
+  --social-bg-hover: #e0d4ca;
+  --social-icon-hover: #403f3d;
+}
+
+html.dark {
+  --text-primary: #e0d4ca;
+  --text-accent: #ad917c;
+
+  --hero-link-color: #e1d4c9;
+  --hero-link-bg: #292826;
+
+  --arrow-icon: #e1d4c9;
+  --arrow-icon-hover: #e1d4c9;
+  --arrow-bg-hover: #403f3d;
+  --arrow-border: #c1b6ad;
+
+  --tab-active-bg: #403f3d;
+  --tab-active-img-bg: #292826;
+  --tab-active-color: #e1d4c9;
+  --tab-hover-bg: #403f3d;
+  --tab-hover-img-bg: #292826;
+  --tab-hover-color: #e1d4c9;
+  --tab-inactive-bg: #292826;
+  --tab-inactive-img-bg: #655f56;
+  --tab-inactive-color: #e1d4c9;
+  --tab-inactive-border: #665f55;
+
+  --bg-page: #292826;
+  --bg-container: #403f3d;
+  --bg-overlay: #545351;
+
+  --border-primary: #665f55;
+  --border-inverse: #c1b6ad;
+
+  --theme-btn-hover-bg: #ad917c;
+  --theme-btn-hover-icon: #403f3d;
+  --theme-btn-inactive-icon: #e0d4ca;
+
+  --tab-active: #403f3d;
+  --tab-inactive: transparent;
+  --tab-hover: #655f55;
+
+  --button-primary: var(--button-transparent);
+  --button-secondary: #403f3d;
+
+  --footer-bg: #403f3d;
+
+  --social-bg-hover: #292826;
+  --social-icon-hover: #e1d4c9;
+}

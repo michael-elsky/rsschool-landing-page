@@ -1,0 +1,9 @@
+@import './tokens.css';
+@import './theme.css';
+@import './font.css';
+@import './base.css';
+
+@import './header.css';
+@import './main/main.css';
+@import './catalog.css';
+@import './footer.css';

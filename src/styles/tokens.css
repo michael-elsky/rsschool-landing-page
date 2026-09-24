@@ -1,0 +1,13 @@
+:root {
+  --font-family: 'Inter', Arial, sans-serif;
+  --font-size-default: 16px;
+
+  --viewport-desktop: 1440px;
+  --viewport-tablet: 768px;
+  --viewport-mobile: 380px;
+
+  --radius-pill: 100px;
+  --radius-block: 40px;
+
+  --transition: all 0.2s ease;
+}

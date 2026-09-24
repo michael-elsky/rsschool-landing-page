@@ -1,0 +1,136 @@
+.app__wrapper {
+  border-radius: var(--radius-block);
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  min-height: 630px;
+  overflow: hidden;
+
+  @media (max-width: 1100px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 400px) {
+    min-height: 768px;
+    gap: 40px;
+  }
+}
+
+.app__download {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 630px;
+  min-height: 342px;
+
+  @media (max-width: 1100px) {
+    max-width: 100%;
+  }
+}
+
+.app__download-heading {
+  max-width: 525px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  margin: 0;
+
+  & span {
+    font-style: italic;
+    color: var(--text-accent);
+  }
+
+  @media (max-width: 700px) {
+    font-size: clamp(32px, 7vw, 60px);
+  }
+  @media (max-width: 490px) {
+    max-width: 327px;
+    font-size: 32px;
+  }
+}
+
+.app__download-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-primary);
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+.app__download-btns {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.app__download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--bg-container);
+  border-radius: 100px;
+  padding: 12px 20px;
+  width: 200px;
+  height: 64px;
+  transition: var(--transition);
+
+  @media (hover: hover) {
+    &:hover {
+      background: var(--arrow-bg-hover);
+    }
+
+    &:hover svg path {
+      fill: var(--arrow-icon-hover);
+    }
+
+    &:hover div {
+      color: var(--arrow-icon-hover);
+    }
+  }
+
+  & svg path {
+    fill: var(--arrow-icon);
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  & span:first-child {
+    font-size: 10px;
+    line-height: 140%;
+  }
+  & span:last-child {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.7px;
+  }
+}
+
+.app__download-img {
+  width: 100%;
+  max-width: 630px;
+  height: 630px;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 576px) {
+    height: auto;
+  }
+}

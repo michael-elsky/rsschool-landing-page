@@ -1,0 +1,10 @@
+@import './hero.css';
+@import './favorite-coffee.css';
+@import './about.css';
+@import './app.css';
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
