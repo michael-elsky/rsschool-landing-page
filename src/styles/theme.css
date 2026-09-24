@@ -15,6 +15,9 @@
   --tab-active-bg: #655f56;
   --tab-active-img-bg: #e0d4ca;
   --tab-active-color: #e1d4c9;
+  --tab-hover-bg: #655f56;
+  --tab-hover-img-bg: #e0d4ca6;
+  --tab-hover-color: #e1d4c9;
   --tab-inactive-bg: #e0d4ca;
   --tab-inactive-img-bg: #c0b6ae;
   --tab-inactive-color: #403f3d;
@@ -63,10 +66,13 @@ html.dark {
   --tab-active-bg: #403f3d;
   --tab-active-img-bg: #292826;
   --tab-active-color: #e1d4c9;
+  --tab-hover-bg: #403f3d;
+  --tab-hover-img-bg: #292826;
+  --tab-hover-color: #e1d4c9;
   --tab-inactive-bg: #292826;
   --tab-inactive-img-bg: #655f56;
   --tab-inactive-color: #e1d4c9;
-  --tab-inactive-border: #665f55; 
+  --tab-inactive-border: #665f55;
 
   --bg-page: #292826;
   --bg-container: #403f3d;
