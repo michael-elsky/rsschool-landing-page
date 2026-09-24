@@ -13,6 +13,10 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-page);
   margin: 0;
+
+}
+.body-overflow {
+  overflow: hidden;
 }
 
 a {
