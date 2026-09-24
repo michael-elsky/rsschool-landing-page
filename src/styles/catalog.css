@@ -53,6 +53,15 @@
       border-radius: var(--radius-pill);
       padding-left: 8px;
       cursor: pointer;
+      transition: var(--transition);
+
+      @media (hover: hover) {
+        &:hover:not(.catalog__tab--active) {
+          color: var(--tab-hover-color);
+          border-color: transparent;
+          background: var(--tab-hover-bg);
+        }
+      }
 
       & span {
         display: flex;
@@ -69,6 +78,7 @@
       background: var(--tab-active-bg);
       color: var(--tab-active-color);
       border-color: transparent;
+      cursor: default;
 
       & span {
         background: var(--tab-active-img-bg);
