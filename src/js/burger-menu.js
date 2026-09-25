@@ -1,3 +1,5 @@
+import { addAttributes, addClass, removeClass } from './utils'
+
 const Classes = {
   menuBtnActive: 'header__action-burger--active',
   menuListActive: 'header__menu-list--active',
@@ -18,24 +20,6 @@ const getControlledElements = () => {
   }
 
   return cachedHTMLElements
-}
-
-const addClass = (element, ...classNames) => {
-  classNames.forEach((className) => {
-    element.classList.add(className)
-  })
-}
-
-const removeClass = (element, ...classNames) => {
-  classNames.forEach((className) => {
-    element.classList.remove(className)
-  })
-}
-
-const addAttributes = (element, attributes) => {
-  Object.entries(attributes).forEach(([key, value]) => {
-    element.setAttribute(key, value)
-  })
 }
 
 const openBurgerMenu = () => {
@@ -84,7 +68,6 @@ const handleEndOfAnimation = (e) => {
   if (e.target === burgerMenuList && e.propertyName === 'transform') {
     removeClass(burgerMenuList, Classes.menuListAnimate)
   }
-
 
   if (burgerMenuList.classList.contains(Classes.menuListActive)) {
     menuLinks[0]?.focus()
