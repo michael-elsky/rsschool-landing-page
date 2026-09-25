@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-page);
   margin: 0;
-
 }
 .body-overflow {
   overflow: hidden;
