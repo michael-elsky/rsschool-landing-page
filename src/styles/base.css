@@ -43,9 +43,6 @@ img {
 
   @media (max-width: 576px) {
     --container-padding: 16px;
-    --container-width: calc(
-      var(--viewport-mobile) - var(--container-padding) * 2
-    );
   }
 
   width: min(var(--container-width), calc(100% - var(--container-padding) * 2));
