@@ -2,6 +2,7 @@ import { fetchData } from './fetchData'
 
 import cardCreator from './cardCreator'
 import { addClass, removeClass, toggleClass } from '../utils'
+import renderModal from './modal'
 
 const Category = {
   COFFEE: 'coffee',
@@ -88,6 +89,14 @@ const cardsRender = (filteredProducts) => {
       description: product.description,
       price: product.price,
     })
+  })
+
+  cards.forEach((card) => {
+    const name = card.querySelector('.catalog__product-heading').textContent
+
+    card.addEventListener('click', () =>
+      renderModal(...filteredProducts.filter((prod) => prod.name === name))
+    )
   })
 
   return cards
