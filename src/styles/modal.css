@@ -148,6 +148,7 @@
   .modal__info-property-icon {
     background: var(--modal-tab-active-icon-bg);
   }
+  
 }
 
 .modal__info-total {
@@ -200,6 +201,7 @@
 }
 
 .modal__info-btn {
+  color: var(--text-primary);
   max-width: 438px;
   height: 44px;
   border: 1px solid var(--modal-btn-border);
