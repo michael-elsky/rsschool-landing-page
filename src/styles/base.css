@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-page);
   margin: 0;
+}
+.body-overflow {
+  overflow: hidden;
 }
 
 a {
@@ -39,9 +43,6 @@ img {
 
   @media (max-width: 576px) {
     --container-padding: 16px;
-    --container-width: calc(
-      var(--viewport-mobile) - var(--container-padding) * 2
-    );
   }
 
   width: min(var(--container-width), calc(100% - var(--container-padding) * 2));

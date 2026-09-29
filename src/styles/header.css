@@ -46,14 +46,17 @@
     background: var(--bg-page);
     margin: 0;
     transform: translateX(100%);
+    visibility: hidden;
+    z-index: 1;
   }
 }
 .header__menu-list--animate {
   transition: var(--transition);
 }
 
-.header__menu-list--open {
+.header__menu-list--active {
   transform: translateX(0%);
+  visibility: visible;
 }
 
 .header__menu-item {
@@ -275,14 +278,14 @@ html.dark .header__actions-theme__btn-dark {
     display: flex;
   }
 }
-.header__action-burger--open::before,
-.header__action-burger--open::after {
+.header__action-burger--active::before,
+.header__action-burger--active::after {
   width: 17px;
   height: 2px;
 }
-.header__action-burger--open::before {
+.header__action-burger--active::before {
   transform: translateY(0) rotate(45deg);
 }
-.header__action-burger--open::after {
+.header__action-burger--active::after {
   transform: translateY(0) rotate(-45deg);
 }

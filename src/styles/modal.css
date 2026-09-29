@@ -1,0 +1,221 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(64, 63, 61, 0.8);
+}
+.modal--open {
+  display: flex;
+}
+
+.modal__wrapper {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  border-radius: 40px;
+  max-width: 800px;
+  background: var(--bg-page);
+  padding: 16px;
+  margin: 16px;
+  border-radius: var(--radius-block);
+
+  @media (max-width: 768px) {
+    max-width: 680px;
+  }
+}
+
+.modal__img {
+  border-radius: var(--radius-block);
+  max-width: 310px;
+  height: 310px;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 540px) {
+    display: none;
+  }
+}
+
+.modal__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    max-width: 346px;
+  }
+}
+
+.modal__info-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 438px;
+  height: 90px;
+
+  & h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--text-primary);
+    margin: 0;
+  }
+}
+
+.modal__info-property {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal__info-property-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal__info-property-heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.modal__info-property-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.modal__info-property-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--modal-tab-color);
+  width: fit-content;
+  height: 46px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px 8px 8px;
+  background: var(--modal-tab-bg);
+  transition: var(--transition);
+  cursor: pointer;
+
+  .modal__info-property-icon {
+    display: grid;
+    place-items: center;
+    color: var(--modal-tab-color);
+    width: 30px;
+    height: 30px;
+    background: var(--modal-tab-icon-bg);
+    border-radius: var(--radius-pill);
+  }
+
+  @media (hover: hover) {
+    &:hover:not(.modal__info-property-btn--active) {
+      color: var(--modal-tab-active-color);
+      background: var(--modal-tab-active-bg);
+      border-color: transparent;
+    }
+  }
+}
+.modal__info-property-btn--active {
+  color: var(--modal-tab-active-color);
+  background: var(--modal-tab-active-bg);
+  border-color: transparent;
+  cursor: default;
+
+  .modal__info-property-icon {
+    background: var(--modal-tab-active-icon-bg);
+  }
+  
+}
+
+.modal__info-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  color: var(--text-primary);
+
+  & p {
+    margin: 0;
+  }
+}
+
+.modal__info-detail {
+  display: flex;
+  gap: 8px;
+  max-width: 438px;
+  height: 52px;
+  font-weight: bold;
+  border-top: 1px solid var(--tab-inactive-border);
+  padding-top: 12px;
+
+  & p {
+    max-width: 400px;
+    font-size: 10px;
+    line-height: 140%;
+    margin: 0;
+  }
+}
+
+.modal__info-detail-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--text-primary);
+  border-radius: var(--radius-block);
+
+  & p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+  }
+}
+
+.modal__info-btn {
+  color: var(--text-primary);
+  max-width: 438px;
+  height: 44px;
+  border: 1px solid var(--modal-btn-border);
+  border-radius: var(--radius-pill);
+  padding: 10px 78px;
+  background: var(--modal-btn-bg);
+  transition: var(--transition);
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--modal-tab-active-color);
+      border-color: transparent;
+      background: var(--modal-tab-active-bg);
+    }
+  }
+}

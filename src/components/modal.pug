@@ -1,0 +1,53 @@
+article.modal
+  .modal__wrapper 
+    .modal__img
+      img(src="", alt="")
+  
+    .modal__info 
+      .modal__info-heading
+        h4.modal__info-name
+        p.modal__info-description
+
+      .modal__info-property
+
+        .modal__info-property-control
+          p.modal__info-property-heading Size 
+          ul.modal__info-property-list
+            li.modal__info-property-item
+              button.modal__info-property-btn.modal__info-property-btn--active(type="button")  
+                .modal__info-property-icon S
+                span.modal__info-property-text 200 ml
+            li.modal__info-property-item
+              button.modal__info-property-btn(type="button")  
+                .modal__info-property-icon M
+                span.modal__info-property-text 300 ml
+            li.modal__info-property-item
+              button.modal__info-property-btn(type="button")  
+                .modal__info-property-icon L
+                span.modal__info-property-text 400 ml
+
+          p.modal__info-property-heading Additives 
+          ul.modal__info-property-list
+            li.modal__info-property-item
+              button.modal__info-property-btn(type="button")  
+                .modal__info-property-icon 1
+                span.modal__info-property-text Sugar
+            li.modal__info-property-item
+              button.modal__info-property-btn(type="button")  
+                .modal__info-property-icon 2
+                span.modal__info-property-text Cinnamon
+            li.modal__info-property-item
+              button.modal__info-property-btn(type="button")  
+                .modal__info-property-icon 3
+                span.modal__info-property-text Syrup
+      
+        .modal__info-total
+          p.modal__info-total-text Total:
+          p.modal__info-total-price $7.00
+        
+        .modal__info-detail 
+          .modal__info-detail-icon 
+            p i
+          p.modal__info-detail-text The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
+        
+        button.modal__info-btn(type="button", aria-label="close the modal") Close
