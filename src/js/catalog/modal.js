@@ -79,14 +79,12 @@ const handleSwitchProperty = (e, type, product) => {
   }
 
   const p = price.sizes + price.additives + +product.price
-  console.log(price.sizes + ' + ' + price.additives)
 
   totalPrice.textContent = `$${p.toFixed(2)}`
 }
 
 const closeModal = (e) => {
   const { body, propertyList, modal } = getControlledElements()
-  console.log(propertyList[0].querySelectorAll('.modal__info-property-btn'))
 
   propertyList[0]
     .querySelectorAll('.modal__info-property-btn')
@@ -140,7 +138,6 @@ const renderModal = (product) => {
       value.size
   })
 
-  console.log(product)
   totalPrice.textContent = `$${product.price}`
 
   propertyList[0].addEventListener('click', (e) =>
