@@ -78,7 +78,7 @@ const handleSwitchProperty = (e, type, product) => {
     price.additives = +product['additives'][icon]['add-price']
   }
 
-  const p = price.sizes + price.additives
+  const p = price.sizes + price.additives + +product.price
   console.log(price.sizes + ' + ' + price.additives)
 
   totalPrice.textContent = `$${p.toFixed(2)}`
@@ -141,7 +141,7 @@ const renderModal = (product) => {
   })
 
   console.log(product)
-  totalPrice.textContent = `$${product.sizes.s['add-price']}`
+  totalPrice.textContent = `$${product.price}`
 
   propertyList[0].addEventListener('click', (e) =>
     handleSwitchProperty(e, 'size', product)
